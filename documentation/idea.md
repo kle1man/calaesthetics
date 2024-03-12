@@ -32,7 +32,7 @@ In order to have *data persistence* within my product, I will implement a *cloud
 
 ### Login System
 
-To make sure that the users can access their data regardless of what device they access the website from, as well as to be able to save their data effectively, I will implement a *login system*. There isn't more more to elaborate on this, most applications of this sort feature a similar system.
+To make sure that the users can access their data regardless of what device they access the application from, as well as to be able to save their data effectively, I will implement a *login system*. There isn't much more to elaborate on this, most applications of this sort feature a similar system.
 
 ### Data Security
 
