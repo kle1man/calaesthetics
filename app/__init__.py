@@ -18,3 +18,4 @@ from app import main
 if __name__ == "__main__":
     # runs the initial login function from "main.py"
     main.login()
+    main.menu()
