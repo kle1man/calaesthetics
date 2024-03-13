@@ -38,3 +38,19 @@ def createaccount(username, password):
     with open(sourcefile, 'a') as file:
         # writes the username and password inputted as parameters to the file, seperated by a colon
         file.write(f"{username}:{password}\n")
+
+def deleteaccount(username):
+    # gets the directory name of this file, and sets a filepath to the "credentials.txt" file in data/
+    sourcefile = os.path.join(os.path.dirname(__file__), '../data/credentials.txt')
+    # reads the contents of the "credentials.txt" file and stores them in a list
+    with open(sourcefile, 'r') as file:
+        lines = file.readlines()
+    # opens the "credentials.txt" file in write mode
+    with open(sourcefile, 'w') as file:
+        # iterates over every line in the file
+        for line in lines:
+            # splits each line at the colon and saves the strings to username and password variables
+            storedusername, _ = line.strip().split(':')
+            # if the stored username does not match the username to be deleted, writes the line back to the file
+            if storedusername != username:
+                file.write(line)
