@@ -7,6 +7,7 @@
 - Initial planning files completed
 - Created username-password authentication system
 - Committed initial console-based login system
+- Implemented navigation menu and started developing the workout logging system
 
 #### 03-11-2024
 
