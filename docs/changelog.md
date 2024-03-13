@@ -2,6 +2,11 @@
 
 ### Prerelease
 
+#### 03-13-2024
+
+- Implemented account creation and deletion functionality
+- Created exercises.py file to start designing the exercise database in conjunction with the workout logging system
+
 #### 03-12-2024
 
 - Initial planning files completed
