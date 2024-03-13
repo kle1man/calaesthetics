@@ -5,17 +5,29 @@ from app import authentication
 
 # handles the user input associated with logging into the application
 def login():
-    print("Please input your credentials to log in.")
+    print("Please input your credentials to log in. If you don't have an account, please type \"create\".")
     # infinite loop until correct credentials are entered
     while True:
-        # takes user input for their username and password
-        username = input("Username: ")
+        # takes user input for their username
+        username = input("Username (or \"create\"): ")
+        # enters an if statement to gather information if the user chooses to create a new account
+        if username == "create":
+            print("\nWelcome to the account creation portal, please enter the credentials you would like to use.")
+            # takes user input for their new credentials
+            newusername = input("Username: ")
+            newpassword = input("Password: ")
+            # runs auxilliary function to create an account
+            authentication.createaccount(newusername, newpassword)
+            print("Successfully created a new account. You are now logged in.")
+            # sends the user to the menu once they have succesfully created an account
+            menu()
+        # takes user input for their password
         password = input("Password: ")
         # runs inputted values through the authentication algorithm
         if authentication.authenticate(username, password):
             print("Login successful.")
-            # exits the loop if authentication passes
-            break
+            # proceeds to the navigation menu if authentication passes
+            menu()
         # if authentication fails, loops again
         else:
             print("Login failed. Please try again.")

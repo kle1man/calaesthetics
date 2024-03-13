@@ -29,3 +29,12 @@ def authenticate(username, password):
     # if an exact match isn't found..
     else:
         return False
+
+# takes a username and password as input and creates a new account by appending the credentials to the "credentials.txt" file
+def createaccount(username, password):
+    # gets the directory name of this file, and sets a filepath to the "credentials.txt" file in data/
+    sourcefile = os.path.join(os.path.dirname(__file__), '../data/credentials.txt')
+    # opens the "credentials.txt" file in append mode
+    with open(sourcefile, 'a') as file:
+        # writes the username and password inputted as parameters to the file, seperated by a colon
+        file.write(f"{username}:{password}\n")
