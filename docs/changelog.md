@@ -2,6 +2,11 @@
 
 ### Prerelease
 
+#### 03-14-2024
+
+- Created exercise database and filled it with the most common exercises along with their muscular load percentages
+- Implemented sorting algorithm to make menu navigation through the exercise database more straightforward
+
 #### 03-13-2024
 
 - Implemented account creation and deletion functionality
