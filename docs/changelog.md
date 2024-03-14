@@ -6,6 +6,8 @@
 
 - Created exercise database and filled it with the most common exercises along with their muscular load percentages
 - Implemented sorting algorithm to make menu navigation through the exercise database more straightforward
+- Started work on menu: implemented file parser to pull headers from databases
+- Learned why consuming 260 mg of caffeine in the evening isn't a wise idea
 
 #### 03-13-2024
 
