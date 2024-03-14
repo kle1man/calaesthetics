@@ -85,24 +85,22 @@ def menu():
     print("\nActions Menu\n1: Log workout\n2: Workout history")
     # infinite loop until valid navigation option is entered
     while True:
-        while True:
-            # try-catch statement to ensure users can only input an integer
-            try:
-                selection = int(input("Type the number correlated to the option you wish to select (or \"0\" to log out and exit the application): "))
-                break
-            except ValueError:
-                print("Invalid input. Try again.")
+        selection = input("Type the number correlated to the option you wish to select (or \"exit\" to log out and exit the application): ")
         # exit clause
-        if selection == 0:
+        if selection == "exit":
             print("Logged out.")
             exit()
-        # enters workout logging page
-        elif selection == 1:
-            logworkout()
-        # enters workout history page
-        elif selection == 2:
-            print("Workout history (to be implemented later)")
-            menu() # temporary, just sends the user back to the menu if they try to access an unimplemented section
+        elif selection.isdigit():
+            # enters workout logging page
+            if int(selection) == 1:
+                logworkout()
+            # enters workout history page
+            elif int(selection) == 2:
+                print("Workout history (to be implemented later)")
+                menu() # temporary, just sends the user back to the menu if they try to access an unimplemented section
+            # if the number inputted is out of range, loops again
+            else:
+                print("Invalid input. Try again.")
         # if the given input is invalid, loops again
         else:
             print("Invalid input. Try again.")
