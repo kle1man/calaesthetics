@@ -12,12 +12,12 @@ parentdirectory = os.path.abspath(os.path.join(currentdirectory, ".."))
 sys.path.append(parentdirectory)
 
 # import modules
-from app import main
-from app import exercises
+import app.main
+import app.exercises
 
 # includes all the code from "main.py" so that it becomes executable
 if __name__ == "__main__":
     # sorts exercise database at launch to ensure working menus
-    exercises.sortexercises()
+    app.exercises.sortexercises()
     # runs the initial login function from "main.py"
-    main.login()
+    app.main.login()
