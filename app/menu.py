@@ -8,6 +8,7 @@ def readdata(filename):
     # for now, this will only be used for the exercise database, so this if statement is neccesary for expansion later on (so different filenames can be inputted)
     if filename == "exercisedb.txt":
         filename = os.path.join(os.path.dirname(__file__), '../data/exercisedb.txt')
+    # initializes data array for header input
     data = []
     # opens the inputted file in read mode
     with open(filename, 'r') as file:

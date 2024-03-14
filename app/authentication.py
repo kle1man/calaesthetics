@@ -5,6 +5,7 @@ import os
 
 # reads the contents of "credentials.txt" and returns a dictionary containing username-password pairs
 def readcredentials():
+    # initializes credentials dictionary
     credentials = {}
     # gets the directory name of this file, and sets a filepath to the "credentials.txt" file in data/
     sourcefile = os.path.join(os.path.dirname(__file__), '../data/credentials.txt')
