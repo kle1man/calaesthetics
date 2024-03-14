@@ -22,3 +22,37 @@ def readdata(filename):
             data.append(header)
     # returns the array of headers
     return data
+
+# displays the menu with items corresponding to a specific page number inputted as a parameter
+def displaymenu(items, pagenumber):
+    # sets the startindex to the item that should be the first line on the page
+    startindex = (pagenumber - 1) * 10
+    # sets the end index to 10 after the start index to display 10 items per page
+    endindex = startindex + 10
+    # iterates through the items array to display menu items
+    for i, item in enumerate(items[startindex:endindex], start = startindex + 1):
+        # adds increasing numbers before printing the items to make selection easier for the user
+        print(f"{i}: {item}")
+    # outputs the page number after the items
+    print(f"Page {pagenumber}")
+
+def navigatemenu(items):
+    pagenumber = 1
+    totalpages = (len(items) + 9) // 10
+    while True:
+        displaymenu(items, pagenumber)
+        action = input("Enter action (n = next page, b = previous page, cancel = cancel menu, exit = exit program): ")
+        if action == "n":
+            pagenumber = min(pagenumber + 1, totalpages)
+        elif action == "b":
+            pagenumber = max(pagenumber - 1, 1)
+        elif action == "cancel":
+            return None
+        elif action == "exit":
+            exit()
+        elif action.isdigit():
+            index = int(action) - 1
+            if index >= 0 and index <= len(items):
+                return items[index]
+        else:
+            print("Invalid input. Try again.")
