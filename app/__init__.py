@@ -13,8 +13,11 @@ sys.path.append(parentdirectory)
 
 # import modules
 from app import main
+from app import exercises
 
 # includes all the code from "main.py" so that it becomes executable
 if __name__ == "__main__":
+    # sorts exercises database at launch to ensure working menus
+    exercises.sortexercises()
     # runs the initial login function from "main.py"
     main.login()

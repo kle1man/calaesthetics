@@ -1,0 +1,48 @@
+Bench Press (Barbell):chest,70;tri,20;delt,10
+Bench Press (Dumbell):chest,70;tri,20;delt,10
+Bicep Curls:bicep,90;forearm,10
+Cable Rows (Close-Grip):lat,75;rdelt,25
+Cable Rows (Wide-Grip):lat,60;rdelt,40
+Deadlifts:ham,50;glute,30;lback,20
+Hack Squats:quad,60;glute,25;ham,15
+Hammer Curls:bicep,80;forearm,20
+Hamstring Curls:ham,80;glute,15;lback,5
+Hip Abductor Machine:glute,60;abd,40
+Hip Adductor Machine:add,70;glute,20;quad,10
+Incline Bench Press (Barbell):chest,60;delt,25;tri,15
+Incline Bench Press (Dumbell):chest,60;delt,25;tri,15
+Incline Bench Press (Smith Machine):chest,60;delt,25;tri,15
+Incline Bicep Curls:bicep,90;forearm,10
+Iso-Lat Pulldown Machine:lat,85;bicep,10;rdelt,5
+Lat Pulldowns:lat,85;bicep,10;rdelt,5
+Lat Pulldowns (Close-Grip):lat,75;rdelt,15;bicep,10
+Lat Pulldowns (Wide-Grip):lat,65;rdelt,25;bicep,10
+Lateral Raises (Cable):delt,90;trap,10
+Lateral Raises (Dumbell):delt,90;trap,10
+Lateral Raises (Machine):delt,90;trap,10
+Leg Extensions:quad,80;ham,15;glute,5
+Overhead Press (Barbell):delt,75;tri,25
+Overhead Press (Dumbell):delt,75;tri,25
+Overhead Press (Smith Machine):delt,75;tri,25
+Overhead Tricep Extensions (Double Rope):tri,70;delt,20;chest,10
+Pec Deck:chest,80;delt,20
+Platform Leg Press:quad,50;ham,30;glute,20
+Preacher Curls:bicep,85;forearm,15
+RDLs:ham,60;glute,30;lback,10
+Rear Delt Fly (Cable):rdelt,80;delt,20
+Reverse Pec Deck:rdelt,80;delt,20
+Skull-Crushers (Barbell):tri,70;chest,20;delt,10
+Skull-Crushers (Dumbell):tri,65;chest,25;delt,10
+Spider Curls:bicep,80;forearm,15;delt,10
+Squats (Barbell):quad,50;glute,30;ham,20
+Squats (Smith Machine):quad,50;glute,30;ham,20
+T-Bar Rows:lat,65;rdelt,25;lback,10
+T-Bar Rows (Chest-Supported):lat,70;rdelt,30
+T-Bar Rows (Wide-Grip):lat,45;rdelt,45;lback,10
+T-Bar Rows (Wide-Grip, Chest-Supported):lat,50;rdelt,50
+Tricep Pushdowns (Cable):tri,75;delt,15;chest,10
+Tricep Pushdowns (Double Rope):tri,80;delt,15;chest,5
+Tricep Pushdowns (Straight Bar):tri,90;delt,5;chest,5
+Tricep Pushdowns (Triangle Attachment):tri,85;delt,10;chest,5
+Y-Raises (Cable):delt,80;rdelt,20
+Y-Raises (Dumbell):delt,80;rdelt,20
