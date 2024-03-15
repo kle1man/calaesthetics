@@ -24,22 +24,24 @@ def readdata(filename):
     return data
 
 # displays the menu with items corresponding to a specific page number inputted as a parameter
-def displaymenu(items, pagenumber):
+def displaymenu(items, pagenumber, which):
     # sets the startindex to the item that should be the first line on the page
     startindex = (pagenumber - 1) * 10
     # sets the end index to 10 after the start index to display 10 items per page
     endindex = startindex + 10
     # finds the total numbers of pages
     totalpages = (len(items) + 9) // 10
+    # prints title for the menu
+    print(f"\n{which}")
     # outputs the page number before the items
-    print(f"\nPage {pagenumber}/{totalpages}")
+    print(f"Page {pagenumber}/{totalpages}")
     # iterates through the items array to display menu items
     for i, item in enumerate(items[startindex:endindex], start = startindex + 1):
         # adds increasing numbers before printing the items to make selection easier for the user
         print(f"{i}: {item}")
 
 # uses the displaymenu() function to create a navigatable menu with selectable items 
-def navigatemenu(items):
+def navigatemenu(items, which):
     # defaults the page number to 1
     pagenumber = 1
     # finds the total number of pages needed to display all items inputted
@@ -47,7 +49,7 @@ def navigatemenu(items):
     # infinite loop to ensure valid input
     while True:
         # hooks the displaymenu() function to display all of the items on a specific page
-        displaymenu(items, pagenumber)
+        displaymenu(items, pagenumber, which)
         # gathers user input
         action = input("Enter action (n = next page, b = previous page, cancel = cancel menu, exit = exit program): ")
         # next page
